@@ -22,7 +22,7 @@ const AddProduct = () => {
         console.warn(name, price, category, company)
         const userid = JSON.parse(localStorage.getItem('user'))
         console.warn({ "UserID": userid._id })
-        let result = await fetch('http://localhost:5000/add-product', {
+        let result = await fetch('https://mern-webs.herokuapp.com/add-product', {
             method: 'post',
             body: JSON.stringify({ name, price, category, company, userid }),
             headers: {

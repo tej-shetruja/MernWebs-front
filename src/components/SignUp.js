@@ -15,7 +15,7 @@ const SignUp = () => {
     })
     const collectData = async () => {
         console.warn("email, password", email, password)
-        let result = await fetch('http://localhost:5000/register', {
+        let result = await fetch('https://mern-webs.herokuapp.com/register', {
             method: 'post',
             body: JSON.stringify({ name, email, password }),
             headers: {

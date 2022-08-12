@@ -37,8 +37,8 @@ const Login = () => {
     return (
         <div className='login'>
             <h1>Login </h1>
-            <input className='inputBox' type={"text"} placeholder='emetr mail' onChange={(e)=> setEmail(e.target.value)} value={email} />
-            <input className='inputBox' type={"password"} placeholder='emetr password' onChange={(e)=> setPassword(e.target.value)} value={password} />
+            <input className='inputBox' type={"text"} placeholder='enter mail' onChange={(e)=> setEmail(e.target.value)} value={email} />
+            <input className='inputBox' type={"password"} placeholder='enter password' onChange={(e)=> setPassword(e.target.value)} value={password} />
             <button onClick={handleLogin} type="button" className="appbutton">Login</button>
             <Link to="/signup" className='link1'>Create a new account</Link>
             

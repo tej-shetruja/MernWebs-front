@@ -35,12 +35,15 @@ const SignUp = () => {
             <h1>Register</h1>
             <input className="inputBox" type={"Text"}
                 value={name} onChange={(e) => setName(e.target.value)} placeholder="enter name" />
+            {error && !name && <span className='invalid-input'>Enter valid Name</span>}
 
             <input className="inputBox" type={"Text"}
                 value={email} onChange={(e) => setEmail(e.target.value)} placeholder="enter email" />
+            {error && !email && <span className='invalid-input'>Enter valid E-mail</span>}
 
             <input className="inputBox" type={"password"}
                 value={password} onChange={(e) => setPassword(e.target.value)} placeholder="enter password" />
+            {error && !password && <span className='invalid-input'>Enter valid Password</span>}
 
             <button onClick={collectData} type="button" className="appbutton">Sign Up</button>
         </div>

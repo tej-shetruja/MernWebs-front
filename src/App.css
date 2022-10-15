@@ -70,7 +70,12 @@
   margin-top: 6px;
 }
 
-
+.invalid-input {
+  color: red;
+  margin-top: -11px;
+  display: block;
+  margin-left: 9px;
+}
 
 .inputBox {
   display: block;
